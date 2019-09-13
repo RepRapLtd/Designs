@@ -1,0 +1,15 @@
+difference()
+{
+union()
+{
+difference()
+{
+cylinder(r=152/2,h=25,center=true,$fn=100);
+translate([0,0,3])
+cylinder(r=146/2,h=25,center=true,$fn=100);
+}
+translate([0,0,15])
+cylinder(r=100/2,h=50,center=true,$fn=100);
+}
+cylinder(r=94/2,h=100,center=true,$fn=100);
+}
