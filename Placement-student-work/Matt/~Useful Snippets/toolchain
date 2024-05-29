@@ -1,0 +1,107 @@
+Eagle copy library parts:
+
+Use the command line. With the target library open, enter:
+   copy devicename.dev@sourcelib  (enter appropriate names here)
+Use the control panel. With the target library open, switch to the
+   control panel, open the source library there, select the device with
+   the right mouse button and chose "copy to library".
+
+Eagle - Change Parts Quickly
+
+To easily change the properties of multiple components, use the change tool (spanner): first click on the tool and select from the menu the change you want to make (eg width to 1.27), then clicking on components will change that property.  To de-clutter the board and see more easily, use the layers tool (multi-coloured squares) first selecting 'none' to hide all layers, then click on the layer you want to view so that it is highlighted in blue and click OK. To return to normal, click the layers tool again and click 'all' which will show all layers.
+
+
+Position PCB near origin
+
+http://dangerousprototypes.com/2012/07/18/eagle-polygons/
+RIPUP @;
+
+
+Load board
+File->Run ULP
+pcb-gcode-setup.ulp
+
+NB bottom does not need to be mirrored to cut correctly.  But X=0 is then to the right of the PCB.
+
+
+Editing G-Code Files
+
+Ctrl + Alt + T to open code window
+
+cd then space then file name then tab to find directory
+
+ls *.gcode to find file in directory
+
+vi then filename
+
+open file, copy edits below
+
+:w to write
+
+:q to quit
+
+
+
+Drill file edits:
+
+:1,$s/(/;&/
+:1,$s/^S/;&/
+:1,$s/^G00.*/& F3000/
+:1,$s/^T/;&/
+:1,$s/^M03/;M03 S1/
+:1,$s/^M05/;M03 S0/
+:1,$s/^M06/;&/
+:1,$s/^M02/M0/
+
+Etch file edits:
+
+As above.
+
+Adjust Z0 at (x,y)=(0,0) then do G92 X0 Y0 Z0
+
+NB!!! Set spindle spinning before executing G Code: M3 S1, then move Z +1mm
+
+
+
+G1 - move (Fx sets movement speed) - G1 X0 Y0 F1000 moves to lat and long origin (not vertical) at reasonable speed
+
+G92 - reset coordinates to current location - G92 X0 Y0 Z0 resets origin to current point
+
+
+
+================================================================================================
+
+http://www.instructables.com/id/Make-your-own-PCBs-on-an-inexpensive-desktop-CNC-m/?ALLSTEPS
+
+Use Eagle CAD DRC to Enforce Design Limitations
+1. In Eagle CAD, select 'Tools->DRC->Clearance'
+2. Set all of the 'Different Signals' clearances to a value larger than your engraving tool (12mil seems to work for a Zen Toolworks 30deg V-Bit)
+3. If you already have a board designed, select 'Check' to see what parts of your board may be too close together to isolate
+Step 3: Make G-Code for a Board
+
+Use pcb-gcode to generate G-Code from Eagle CAD
+1. Open your board design in Eagle CAD
+2. From the Eagle CAD Control Panel window, right-click User Language Programs->pcb-gcode->pcb-gcode-setup.ulp and select 'Run In Board'
+3. The pcb-gcode dialog will pop up.
+4. On the 'Generation Options' tab, select 'Generate bottom outlines', 'Generate bottom drills' and 'Show preview'.
+5. For 'Etching Tool Size' enter 0.254mm
+6. On the 'Machine' tab, set 'Spindle Up Time' to 3 and set the feed rates to 300mm/min
+7. Set 'Z High' to 12mm, 'Z Up' to 3mm, 'Z Down' to -0.08mm
+8. Use calipers to determine the thickness of your board and enter that value plus .1mm or so for 'Drill Depth'
+9. On the 'GCode Style' tab, select 'Mach3 - EMC for Windows'
+10. On the 'GCode Options' tab, select all of the 'NC File Comments' options as well as 'Do tool change with zero step'
+11. Click 'Accept and make my board'
+12. An image view window will pop up and display what will be etched. pcb-gcode will join signals that are too close so look at the image carefully to make sure that all signals are properly isolated.
+
+Use pcb-probe to generate leveling G-Code for your board G-Code
+13. From your favorite command shell, navigate to the directory where your Eagle CAD board files are saved.
+14. Look for some files that end with '.tap'. Those are the G-Code files you generated with pcb-gcode
+15. Find a file named (something).etch.tap. That is the G-Code for etching your design.
+16. Run pcb-probe on that file by typing 'pcb-probe (something).etch.tap (something).probe.tap
+17. You should see something like this:
+
+Processing input file ... pov_driver.bot.etch.tap
+Board Size (mm): 47.5488x32.3088
+
+Generating Mach3 GCode output in pov_driver.bot.probe.tap
+Done.

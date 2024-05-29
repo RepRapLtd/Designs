@@ -1,0 +1,89 @@
+(.../Electronics/Eagle/pcb-gcode/pcb-gcode.ulp)
+(Copyright 2005 - 2012 by John Johnson)
+(See readme.txt for licensing terms.)
+(This file generated from the board:)
+(.../Z - Hole Plotter/hole plotter.brd)
+(Current profile is .../pcb-gcode/profiles/generic.pp  )
+(This file generated 05/10/2016 10:41)
+(Settings from pcb-machine.h)
+(spindle on time = 1000.0000)
+(  Tool Size)
+(0.1778 )
+(spindle speed = 30000.0000)
+(tool change at 0.0000 0.0000 5.0000 )
+(feed rate xy = F500.00 )
+(feed rate z  = F200.00 )
+(Z Axis Settings)
+(  High     Up        Down     Drill)
+(5.0000 	2.0000 	-0.2000 	-2.0000 )
+(Settings from pcb-defaults.h)
+(isolate min = 0.0250)
+(isolate max = 0.5000)
+(isolate step = 0.0800)
+(Generated bottom outlines, bottom drill, )
+(Unit of measure: mm)
+(Metric Mode)
+G21
+(Absolute Coordinates)
+G90
+S30000
+G00 Z5.0000 
+G00 X0.0000 Y0.0000 
+M03
+G04 P1000.000000
+G00 Z2.0000 
+G00 X0.1139 Y-0.0227 
+G01 Z-0.2000 F200.00 
+G01 X0.0966 Y-0.0645 F500.00 
+G01 X0.0645 Y-0.0966 
+G01 X0.0227 Y-0.1139 
+G01 X-76.2227 Y-0.1139 
+G01 X-76.2645 Y-0.0966 
+G01 X-76.2966 Y-0.0645 
+G01 X-76.3139 Y-0.0227 
+G01 X-76.3139 Y63.5227 
+G01 X-76.2966 Y63.5645 
+G01 X-76.2645 Y63.5966 
+G01 X-76.2227 Y63.6139 
+G01 X0.0227 Y63.6139 
+G01 X0.0645 Y63.5966 
+G01 X0.0966 Y63.5645 
+G01 X0.1139 Y63.5227 
+G01 X0.1139 Y-0.0227 
+G00 Z2.0000 
+G00 X0.1939 Y-0.0386 
+G01 Z-0.2000 F200.00 
+G01 X0.1644 Y-0.1098 F500.00 
+G01 X0.1098 Y-0.1644 
+G01 X0.0386 Y-0.1939 
+G01 X-76.2386 Y-0.1939 
+G01 X-76.3098 Y-0.1644 
+G01 X-76.3644 Y-0.1098 
+G01 X-76.3939 Y-0.0386 
+G01 X-76.3939 Y63.5386 
+G01 X-76.3644 Y63.6098 
+G01 X-76.3098 Y63.6644 
+G01 X-76.2386 Y63.6939 
+G01 X0.0386 Y63.6939 
+G01 X0.1098 Y63.6644 
+G01 X0.1644 Y63.6098 
+G01 X0.1939 Y63.5386 
+G01 X0.1939 Y-0.0386 
+G00 Z2.0000 
+G00 X0.2042 Y-0.1832 
+G01 Z-0.2000 F200.00 
+G01 X0.1832 Y-0.2042 F500.00 
+G01 X0.2042 Y-0.2042 
+G01 X0.2042 Y-0.1832 
+G00 Z2.0000 
+G00 X0.2042 Y63.6831 
+G01 Z-0.2000 F200.00 
+G01 X0.2042 Y63.7042 F500.00 
+G01 X0.1832 Y63.7042 
+G01 X0.2042 Y63.6831 
+G00 Z2.0000 
+G00 X-76.4042 Y63.6831 
+G01 Z-0.2000 F200.00 
+G01 X-76.3832 Y63.7042 F500.00 
+G01 X-76.4042 Y63.7042 
+G01 X-76.4042 Y63.6831 

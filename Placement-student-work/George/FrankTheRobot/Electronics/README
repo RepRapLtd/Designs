@@ -1,0 +1,29 @@
+The files in this directory called frankShield.sch and frankshield.brd are the Eagle schematic and PCB layout for the Adruino shield for Frank the Robot.
+
+They are intended to go with an EPS8266 D1 Arduino-pinout WiFi controller, which operates at 3V3. On no account use it with any board operating at 5V.
+
+The directory Data-sheets contains .PDF files for some of the components used.
+
+The directory Legacy-files contains previous designs and experiments.
+
+The file pcbtrain.dru contains the Eagle design-rules file from http://optics.eee.nottingham.ac.uk/eagle/eagle2pcbtrain.html
+
+The file frank-gerb274x.cam is the Eagle job that generates the GERBER files for the PCB.
+
+The file clean is a short shell script that removes the Eagle temporary files.
+
+The GERBER files for the board are in the CAM directory.  They have the subscripts:
+
+.GTL - top copper
+.GBL - bottom copper
+.GTO - top silkscreen
+.GTP - top paste
+.GBO - bottom silkscreen (this is not needed)
+.GTS - top soldermask
+.GBS - bottom soldermask
+.TXT - drill file
+.dri - drill specifications
+.GML - Mill layer (this is not needed)
+
+
+

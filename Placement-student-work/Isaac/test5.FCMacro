@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/test5.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Part
+
+Blocksub = App.ActiveDocument.addObject("Part::Box","Box")
+		   App.ActiveDocument.ActiveObject.Label = "Cube"
+		   App.ActiveDocument.recompute()
+		   App.ActiveDocument.addObject("Part::Cylinder","Cylinder")
+		   App.ActiveDocument.ActiveObject.Label = "Cylinder"  
+		   App.ActiveDocument.recompute()
+Blocksub

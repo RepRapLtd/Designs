@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/123.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Part
+from PySide import QtGui
+mw = FreeCADGui.getMainWindow()
+
+def cbox(l,w,h):
+	result = App.ActiveDocument.addObject("Part::Box","Box")
+	App.ActiveDocument.ActiveObject.Label = "Cube"
+	App.ActiveDocument.recompute()
+	FreeCAD.getDocument("Unnamed").getObject("Box").Length = l
+	FreeCAD.getDocument("Unnamed").getObject("Box").Width = w
+	FreeCAD.getDocument("Unnamed").getObject("Box").Height = h
+	return result
+
+def ccyl(r,a,hi):
+	result = App.ActiveDocument.addObject("Part::Cylinder","Cylinder")
+	App.ActiveDocument.ActiveObject.Label = "Cylindr"
+	App.ActiveDocument.recompute()
+	FreeCAD.getDocument("Unnamed").getObject("Cylinder").Height = hi
+	FreeCAD.getDocument("Unnamed").getObject("Cylinder").Radius = r
+	FreeCAD.getDocument("Unnamed").getObject("Cylinder").Angle = a
+
+
+def onColor():
+    col = color.getColor()
+    palette = dialog.palette()
+    palette.setColor(dialog.backgroundRole(), col)
+    dialog.setPalette(palette)
+
+
+def col(a):
+	dialog = QtGui.QDialog(mw)
+	colour = QtGui.QColorDialog(dialog)
+	#a.ShapeColor = colour
+	#a.LineColor = colour
+	#a.PointColor = colour
+	
+
+a=cbox(10,12,20)
+b=ccyl(10,360,10)
+c=ccyl(12,270,10)
+d=cbox(5,32,25)
+col(d)
+
+
+
+

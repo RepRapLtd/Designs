@@ -1,0 +1,4 @@
+Pressure error (send 92) - /\P =  4kPa/s, so range 2 kPa/s - 6 kPa/s to trigger emergency stop command
+Pressure loss (send 94) -  if pressure loss with no command
+
+Find out issue with timing (delay)

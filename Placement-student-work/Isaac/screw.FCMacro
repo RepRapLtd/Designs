@@ -1,0 +1,139 @@
+import FreeCAD
+import Part
+import math
+from FreeCAD import Base
+import DraftTools
+
+#This is a function that will creat a custom size box depending on the variables you enter
+def cbox(l,w,h):
+	result = App.ActiveDocument.addObject("Part::Box","Box")
+	#App.ActiveDocument.ActiveObject.Label = "Cube"
+	App.ActiveDocument.recompute()
+	result.Length = l
+	result.Width = w
+	result.Height = h
+	return result
+
+#This is the move function which allows you to move an object to specific co-ordinates
+def move(a, x, y, z):
+	r = a.Placement.Rotation
+	a.Placement = App.Placement(App.Vector(x,y,z),r)
+	#return result
+
+#This function allows you to rotate the object
+def rot(a,x,y,z,A):
+	m = a.Placement.Base
+	a.Placement = App.Placement(m,App.Rotation(App.Vector(x,y,z),A))
+
+#This function allows you to creat a custom size cylinder depending on the variables entered
+def ccyl(r,hi):
+	result = App.ActiveDocument.addObject("Part::Cylinder","Cylinder")
+	#App.ActiveDocument.ActiveObject.Label = "Cylindr"
+	App.ActiveDocument.recompute()
+	result.Height = hi
+	result.Radius = r
+	App.ActiveDocument.recompute()
+	return result
+
+#This function allows you to subtract blockas from eachother
+def subtract(a,b):
+	result=App.activeDocument().addObject("Part::Cut","Cut")
+	App.activeDocument().Cut.Base = a
+	App.activeDocument().Cut.Tool = b
+	App.ActiveDocument.recompute()
+	return result
+
+#This function allows you to fuse two objects together
+def union(c,d):
+	result = App.activeDocument().addObject("Part::Fuse","Fusion")
+	App.activeDocument().Fusion.Base = c
+	App.activeDocument().Fusion.Tool = d
+	App.ActiveDocument.recompute()
+	return result
+
+#This fyunction makes a hexagon
+def hexagon(d):
+	a=2*3.1415926/6
+	r = d/(2*math.cos(a/2))
+	#points=[FreeCAD.Vector(-2.0,4.0,0.0),FreeCAD.Vector(2.0,4.0,0.0),FreeCAD.Vector(4.46325540543,0.332903712988,0.0),FreeCAD.Vector(2.5198032856,-3.15387630463,0.0),FreeCAD.Vector(-1.48141813278,-3.15387630463,0.0),FreeCAD.Vector(-3.82499217987,0.447224408388,0.0)]
+	#Draft.makeWire(points,closed=True,face=False,support=None)
+	points=[FreeCAD.Vector(r*math.cos(a*0),r*math.sin(a*0),0),FreeCAD.Vector(r*math.cos(a*1),r*math.sin(a*1),0),FreeCAD.Vector(r*math.cos(a*2),r*math.sin(a*2),0),FreeCAD.Vector(r*math.cos(a*3),r*math.sin(a*3),0),FreeCAD.Vector(r*math.cos(a*4),r*math.sin(a*4),0),FreeCAD.Vector(r*math.cos(a*5),r*math.sin(a*5),0)]
+	Draft.makeWire(points,closed=True,face=True,support=None)
+	result = FreeCAD.getDocument("Unnamed").addObject("Part::Extrusion","Extrude")
+	FreeCAD.getDocument("Unnamed").Extrude.Base = FreeCAD.getDocument("Unnamed").DWire
+	FreeCAD.getDocument("Unnamed").Extrude.Dir = (0,0,10)
+	FreeCAD.getDocument("Unnamed").Extrude.Solid = (False)
+	FreeCAD.getDocument("Unnamed").Extrude.TaperAngle = (0)
+	FreeCADGui.getDocument("Unnamed").DWire.Visibility = False
+	FreeCAD.getDocument("Unnamed").Extrude.Label = 'Extrude'
+	return result
+
+#This is the function that makes the screw where all the dimentions and veriables are entered and then makes a screw depending on the sizes entered
+#also in this function it decides on what diamiters to use depending on the "dia" value
+def screw(dia,length):
+	if dia==2:
+		hd=3.62
+		k=2
+		s = 1.5
+	elif dia==2.5:
+		hd=4.35
+		k=2.5
+		s = 2.0
+	elif dia==3:
+		hd=5.32
+		k=3
+		s=2.5
+	elif dia==4:
+		hd=6.78
+		k=4
+		s=3
+	elif dia==5:
+		hd=8.23
+		k=5
+		s=4
+	elif dia==6:
+		hd=9.76
+		k=6
+		s=5
+	elif dia==8:
+		hd=12.73
+		k=8
+		s=8
+	elif dia==10:
+		hd=16.73
+		k=10
+		s=8
+	elif dia==12:
+		hd=17.73
+		k=12
+		s=10				
+	else:
+		print("Wrong Diameater")
+	dia2 = ccyl(hd/2,k)
+	dia1 = ccyl(dia/2,length+k)
+	print(k)
+	print(length+k)
+	p=union(dia1, dia2)
+	h = hexagon(s)
+	move(h,0,0,-10+0.8*k)
+	s=subtract(p,h)
+	return s
+
+
+
+
+
+#This makes the screw around the diameters 5
+
+u = screw(2,5)
+
+App.ActiveDocument.recompute()
+
+
+
+	
+
+
+
+
+

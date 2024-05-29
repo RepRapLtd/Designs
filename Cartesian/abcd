@@ -1,0 +1,25 @@
+Cartesian robot debug file: 
+
+  "a" sent to the robot.  write(...) call returned: 1
+  "5d09e9" returned from the robot.  read(...) call returned: 6
+  "b" sent to the robot.  write(...) call returned: 1
+  "5d09e9" returned from the robot.  read(...) call returned: 6
+  "c" sent to the robot.  write(...) call returned: 1
+  "5d09e9" returned from the robot.  read(...) call returned: 6
+ Coordinates: (6097385, 6097385, 6097385) received from the robot.
+  "a" sent to the robot.  write(...) call returned: 1
+  "5d09e9" returned from the robot.  read(...) call returned: 6
+  "b" sent to the robot.  write(...) call returned: 1
+  "5d09e9" returned from the robot.  read(...) call returned: 6
+  "c" sent to the robot.  write(...) call returned: 1
+  "5d09e9" returned from the robot.  read(...) call returned: 6
+ Coordinates: (6097385, 6097385, 6097385) received from the robot.
+  "t" sent to the robot.  write(...) call returned: 1
+  "5f1060" returned from the robot.  read(...) call returned: 6
+  "s" sent to the robot.  write(...) call returned: 1
+  "5f1060" returned from the robot.  read(...) call returned: 6
+  "j" sent to the robot.  write(...) call returned: 1
+  "5f1060" returned from the robot.  read(...) call returned: 6
+  "i" sent to the robot.  write(...) call returned: 1
+  "5f1060" returned from the robot.  read(...) call returned: 6
+~cartesian() called.

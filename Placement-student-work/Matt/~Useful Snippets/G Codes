@@ -1,0 +1,6 @@
+G Codes:
+Cutter Off - M3 S0
+Reset all to origin: G92 X0 Y0 Z0
+
+Eagle:
+remove flood: ripup @;

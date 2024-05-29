@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/12.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+
+#Gui.ActiveDocument.setEdit('Box',0)
+#Gui.ActiveDocument.setEdit('Box',0)
+#Gui.ActiveDocument.setEdit('Box',0)
+# Macro End: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/12.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

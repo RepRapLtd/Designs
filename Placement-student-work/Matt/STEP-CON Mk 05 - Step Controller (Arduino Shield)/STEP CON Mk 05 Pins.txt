@@ -1,0 +1,20 @@
+STEP CON Mk 5 (Arduino Shield) Pins for Programming
+
+Output
+
+	STEP		A1
+	DIR			A0
+	REF			3
+
+Input
+
+	SKYCLOCK	2
+	SDA			A4 (default)
+	SCK			A5 (default)
+	
+	
+STEP CON Mk 5 Connecting Pins
+
+	1. 5V		2. CLK
+	3. GND    	4. SCK
+	5. SDA    	6. GND

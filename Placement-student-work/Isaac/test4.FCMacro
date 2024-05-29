@@ -1,0 +1,77 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/test4.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Part
+
+App.ActiveDocument.addObject("Part::Box","Box")
+App.ActiveDocument.ActiveObject.Label = "Cube"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.getDocument("Unnamed").removeObject("Fillet004")
+App.getDocument("Unnamed1").removeObject("Box")
+App.ActiveDocument.addObject("Part::Cylinder","Cylinder")
+App.ActiveDocument.ActiveObject.Label = "Cylinder"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.getDocument("Unnamed1").removeObject("Cylinder")
+App.ActiveDocument.addObject("Part::Sphere","Sphere")
+App.ActiveDocument.ActiveObject.Label = "Sphere"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.getDocument("Unnamed1").removeObject("Sphere001")
+App.ActiveDocument.addObject("Part::Cone","Cone")
+App.ActiveDocument.ActiveObject.Label = "Cone"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.ActiveDocument.addObject("Part::Cone","Cone")
+App.ActiveDocument.ActiveObject.Label = "Cone"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.getDocument("Unnamed1").removeObject("Cone002")
+App.getDocument("Unnamed1").removeObject("Cone003")
+App.ActiveDocument.addObject("Part::Torus","Torus")
+App.ActiveDocument.ActiveObject.Label = "Torus"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.getDocument("Unnamed1").removeObject("Torus")
+App.ActiveDocument.addObject("Part::Box","Box")
+App.ActiveDocument.ActiveObject.Label = "Cube"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.ActiveDocument.addObject("Part::Box","Box")
+App.ActiveDocument.ActiveObject.Label = "Cube"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.getDocument("Unnamed1").removeObject("Box")
+App.getDocument("Unnamed1").removeObject("Box001")
+App.ActiveDocument.addObject("Part::Box","Box")
+App.ActiveDocument.ActiveObject.Label = "Cube"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.ActiveDocument.addObject("Part::Box","Box")
+App.ActiveDocument.ActiveObject.Label = "Cube"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.ActiveDocument.addObject("Part::Cylinder","Cylinder")
+App.ActiveDocument.ActiveObject.Label = "Cylinder"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.ActiveDocument.addObject("Part::Cylinder","Cylinder")
+App.ActiveDocument.ActiveObject.Label = "Cylinder"
+App.ActiveDocument.recompute()
+#Gui.SendMsgToActiveView("ViewFit")
+App.activeDocument().addObject("Part::Cut","Cut")
+App.activeDocument().Cut.Base = App.activeDocument().Box
+App.activeDocument().Cut.Tool = App.activeDocument().Cylinder001
+#Gui.activeDocument().Box.Visibility=False
+#Gui.activeDocument().Cylinder001.Visibility=False
+#Gui.ActiveDocument.Cut.ShapeColor=Gui.ActiveDocument.Box.ShapeColor
+#Gui.ActiveDocument.Cut.DisplayMode=Gui.ActiveDocument.Box.DisplayMode
+App.ActiveDocument.recompute()
+App.getDocument("Unnamed1").removeObject("Cut")
+App.getDocument("Unnamed1").removeObject("Cylinder")
+App.getDocument("Unnamed1").removeObject("Box")
+App.getDocument("Unnamed1").removeObject("Cylinder001")
+App.getDocument("Unnamed1").removeObject("Box001")
+# Macro End: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/test4.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

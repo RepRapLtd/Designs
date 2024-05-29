@@ -1,0 +1,8 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/123456789.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import DraftTools
+
+#Gui.activateWorkbench("DraftWorkbench")
+# Macro End: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/123456789.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

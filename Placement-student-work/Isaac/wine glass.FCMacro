@@ -1,0 +1,45 @@
+import FreeCAD
+import Part
+import math
+from FreeCAD import Base
+import DraftTools
+
+
+def ccyl(r,hi):
+	result = App.ActiveDocument.addObject("Part::Cylinder","Cylinder")
+	#App.ActiveDocument.ActiveObject.Label = "Cylindr"
+	App.ActiveDocument.recompute()
+	result.Height = hi
+	result.Radius = r
+	App.ActiveDocument.recompute()
+	return result
+
+def union(c,d):
+	result = App.activeDocument().addObject("Part::Fuse","Fusion")
+	result.Base = c
+	result.Tool = d
+	App.ActiveDocument.recompute()
+	return result
+
+def move(a, x, y, z):
+	r = a.Placement.Rotation
+	a.Placement = App.Placement(App.Vector(x,y,z),r)
+
+def subtract(a,b):
+	result=App.activeDocument().addObject("Part::Cut","Cut")
+	result.Base = a
+	result.Tool = b
+	App.ActiveDocument.recompute()
+	return result
+
+bob=ccyl(35,8)
+bill=ccyl(6.5,65)
+a = ccyl(40,55)
+move(a,0,0,65)
+b=ccyl(35,55)
+move(b,0,0,69)
+p=subtract(a,b)
+q=union(bill,bob)
+r=union(q,p)
+
+App.ActiveDocument.recompute()

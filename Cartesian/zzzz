@@ -1,0 +1,256 @@
+Cartesian robot debug file: 
+
+  "a" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "b" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "c" sent to the robot.  write(...) call returned: 1
+  "000960" returned from the robot.  read(...) call returned: 6
+ Coordinates: (5600, 5600, 2400) received from the robot.
+  "a" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "b" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "c" sent to the robot.  write(...) call returned: 1
+  "000960" returned from the robot.  read(...) call returned: 6
+ Coordinates: (5600, 5600, 2400) received from the robot.
+ Sending coordinates: (5600, 5600, 12473) to the robot.
+  "A" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (0, 0, 12473) to the robot.
+  wr(...) called while waiting.
+  "05" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (-20000, 0, 12473) to the robot.
+  wr(...) called while waiting.
+  "00" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "ffb1e0" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (0, -20000, 12473) to the robot.
+  wr(...) called while waiting.
+  "01" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "ffb1e0" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (0, 0, 20000) to the robot.
+  wr(...) called while waiting.
+  "05" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "004e20" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+  wr(...) called while waiting.
+  "25" returned from the robot.  read(...) call returned: 2
+  "a" sent to the robot.  write(...) call returned: 1
+  "ffff9d" returned from the robot.  read(...) call returned: 6
+  "b" sent to the robot.  write(...) call returned: 1
+  "ffff9c" returned from the robot.  read(...) call returned: 6
+  "c" sent to the robot.  write(...) call returned: 1
+  "00311a" returned from the robot.  read(...) call returned: 6
+ Coordinates: (-99, -100, 12570) received from the robot.
+Zero test. x error: 1, y error: 0, z error: 3
+  "r" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (100, 100, -100) to the robot.
+  "A" sent to the robot.  write(...) call returned: 1
+  "000064" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000064" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "ffff9c" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "f" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (0, 0, 12473) to the robot.
+  wr(...) called while waiting.
+  "25" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "p" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (5600, 5600, 12473) to the robot.
+  "A" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (5600, 5600, 2400) to the robot.
+  wr(...) called while waiting.
+  "25" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "000960" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+  wr(...) called while waiting.
+  "25" returned from the robot.  read(...) call returned: 2
+  "a" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "b" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "c" sent to the robot.  write(...) call returned: 1
+  "000960" returned from the robot.  read(...) call returned: 6
+ Coordinates: (5600, 5600, 2400) received from the robot.
+  "a" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "b" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "c" sent to the robot.  write(...) call returned: 1
+  "000960" returned from the robot.  read(...) call returned: 6
+ Coordinates: (5600, 5600, 2400) received from the robot.
+ Sending coordinates: (5600, 5600, 12473) to the robot.
+  "A" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (0, 0, 12473) to the robot.
+  wr(...) called while waiting.
+  "05" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (-20000, 0, 12473) to the robot.
+  wr(...) called while waiting.
+  "00" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "ffb1e0" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (0, -20000, 12473) to the robot.
+  wr(...) called while waiting.
+  "01" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "ffb1e0" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (0, 0, 20000) to the robot.
+  wr(...) called while waiting.
+  "05" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "004e20" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+  wr(...) called while waiting.
+  "25" returned from the robot.  read(...) call returned: 2
+  "a" sent to the robot.  write(...) call returned: 1
+  "ffff9c" returned from the robot.  read(...) call returned: 6
+  "b" sent to the robot.  write(...) call returned: 1
+  "ffff9c" returned from the robot.  read(...) call returned: 6
+  "c" sent to the robot.  write(...) call returned: 1
+  "00311d" returned from the robot.  read(...) call returned: 6
+ Coordinates: (-100, -100, 12573) received from the robot.
+Zero test. x error: 0, y error: 0, z error: 0
+  "r" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (100, 100, -100) to the robot.
+  "A" sent to the robot.  write(...) call returned: 1
+  "000064" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000064" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "ffff9c" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "f" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (0, 0, 12473) to the robot.
+  wr(...) called while waiting.
+  "25" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "000000" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "p" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (5600, 5600, 12473) to the robot.
+  "A" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "0030b9" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+ Sending coordinates: (5600, 5600, 2400) to the robot.
+  wr(...) called while waiting.
+  "25" returned from the robot.  read(...) call returned: 2
+  "A" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "B" sent to the robot.  write(...) call returned: 1
+  "0015e0" sent to the robot.  write(...) call returned: 6
+  "C" sent to the robot.  write(...) call returned: 1
+  "000960" sent to the robot.  write(...) call returned: 6
+  "h" sent to the robot.  write(...) call returned: 1
+  "F" sent to the robot.  write(...) call returned: 1
+  wr(...) called while waiting.
+  "25" returned from the robot.  read(...) call returned: 2
+  "a" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "b" sent to the robot.  write(...) call returned: 1
+  "0015e0" returned from the robot.  read(...) call returned: 6
+  "c" sent to the robot.  write(...) call returned: 1
+  "000960" returned from the robot.  read(...) call returned: 6
+ Coordinates: (5600, 5600, 2400) received from the robot.
+  "t" sent to the robot.  write(...) call returned: 1
+  "0004b0" returned from the robot.  read(...) call returned: 6
+  "s" sent to the robot.  write(...) call returned: 1
+  "0002bc" returned from the robot.  read(...) call returned: 6
+  "j" sent to the robot.  write(...) call returned: 1
+  "000001" returned from the robot.  read(...) call returned: 6
+  "i" sent to the robot.  write(...) call returned: 1
+  "000001" returned from the robot.  read(...) call returned: 6
+~cartesian() called.

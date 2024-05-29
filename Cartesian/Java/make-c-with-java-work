@@ -1,0 +1,7 @@
+javac c_file.java
+javah -jni c_file
+cp c_c_file.h c_c_file.c
+[edit c_c_file.c]  
+gcc -c -D_REENTRANT -fPIC -I. c_c_file.c
+gcc -shared c_c_file.o -o libc_c_file.so
+

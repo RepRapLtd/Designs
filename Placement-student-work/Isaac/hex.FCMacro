@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/hex.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import DraftTools
+
+points=[FreeCAD.Vector(-2.0,4.0,0.0),FreeCAD.Vector(2.0,4.0,0.0),FreeCAD.Vector(4.46325540543,0.332903712988,0.0),FreeCAD.Vector(2.5198032856,-3.15387630463,0.0),FreeCAD.Vector(-1.48141813278,-3.15387630463,0.0),FreeCAD.Vector(-3.82499217987,0.447224408388,0.0)]
+Draft.makeWire(points,closed=True,face=False,support=None)
+# Macro End: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/hex.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

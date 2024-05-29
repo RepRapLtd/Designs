@@ -1,0 +1,31 @@
+Partlist
+
+Exported from pneumatic-reg.sch at 05/07/2016 16:59
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device          Package    Library    Sheet
+
+ATTINY                  DIL8            DIL08      ic-package 1
+C1       10u            C-EUC1206       C1206      rcl        1
+C2       10u            C-EUC1206       C1206      rcl        1
+C3       0.1uF          C-EUC1206       C1206      rcl        1
+C4       0.1uF          C-EUC1206       C1206      rcl        1
+C5       0.1uF          C-EUC1206       C1206      rcl        1
+IC1      BD6230F        BD6230F         SOP8       rohm       1
+IC2      OPA333D        OPA333D         SO08       linear     1
+IC3      78L09          78LXX           78LXX      v-reg      1
+R1       120R           R-EU_M0805      M0805      rcl        1
+R2       120R           R-EU_M0805      M0805      rcl        1
+R3       4K7            R-EU_M0805      M0805      rcl        1
+R4       4K7            R-EU_M0805      M0805      rcl        1
+R5       470K           R-EU_M0805      M0805      rcl        1
+R6       4.7K           R-EU_M0805      M0805      rcl        1
+R7       470K           R-EU_M0805      M0805      rcl        1
+R8       4.7K           R-EU_M0805      M0805      rcl        1
+R9       4.7K           R-EU_M0805      M0805      rcl        1
+R10                     TRIM_1234-S64YW S64YW      pot        1
+X2       22-23-2041     22-23-2041      22-23-2041 con-molex  1
+X7       22-23-2051     22-23-2051      22-23-2051 con-molex  1

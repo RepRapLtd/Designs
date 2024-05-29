@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/extrd.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import DraftTools
+import Draft
+import Part
+
+points=[FreeCAD.Vector(-3.15410351753,0.576352119446,0.0),FreeCAD.Vector(-2.43841290474,-0.874028623104,0.0),FreeCAD.Vector(-1.41237962246,0.228007346392,0.0)]
+Draft.makeWire(points,closed=True,face=False,support=None)
+#Gui.activateWorkbench("PartWorkbench")
+FreeCAD.getDocument("Unnamed").addObject("Part::Extrusion","Extrude")
+FreeCAD.getDocument("Unnamed").Extrude.Base = FreeCAD.getDocument("Unnamed").DWire
+FreeCAD.getDocument("Unnamed").Extrude.Dir = (0,0,10)
+FreeCAD.getDocument("Unnamed").Extrude.Solid = (False)
+FreeCAD.getDocument("Unnamed").Extrude.TaperAngle = (0)
+FreeCADGui.getDocument("Unnamed").DWire.Visibility = False
+FreeCAD.getDocument("Unnamed").Extrude.Label = 'Extrude'
+
+#Gui.ActiveDocument.Extrude.ShapeColor=Gui.ActiveDocument.DWire.ShapeColor
+#Gui.ActiveDocument.Extrude.LineColor=Gui.ActiveDocument.DWire.LineColor
+#Gui.ActiveDocument.Extrude.PointColor=Gui.ActiveDocument.DWire.PointColor
+# Macro End: /home/isaacmoyse/Desktop/rrlcloud/RepRapLtd/Engineering/Isaac/extrd.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
