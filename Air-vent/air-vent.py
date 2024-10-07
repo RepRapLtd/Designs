@@ -15,13 +15,13 @@
 
 # Define the air vent's parameters
 
-length = 100        # Length of the vent
-height = 50         # Height of the vent
-thickness = 3       # Thickness of the vent
-diameter = 5        # Diameter of the screw holes
+length = 200        # Length of the vent
+height = 100         # Height of the vent
+thickness = 2.5       # Thickness of the vent
+diameter = 4        # Diameter of the screw holes
 edge_gap = 6       # Distance from the edge to the center of the screw holes
-slots = 5            # Number of slots
-slot_height = 4     # Height of each slot (in the Y/height direction)
+slots = 8            # Number of slots
+slot_height = 6     # Height of each slot (in the Y/height direction)
 louver_angle = 45  # Angle of the louvers in degrees
 
 import FreeCAD as App

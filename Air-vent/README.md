@@ -1,3 +1,5 @@
+![Air vent](vent.png "Air vent")
+
 FreeCAD Python macro to make an air vent.
 
 Written by GPT4o with a bit of help from Adrian Bowyer.
